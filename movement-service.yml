@@ -1,0 +1,9 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: movement-service
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/movement-service-database
