@@ -1,6 +1,6 @@
 server:
-  port: 8770
+  port: 8761
 
-spring:
-  application:
-    name: movement-service
+eureka:
+  instance:
+    hostname: localhost
