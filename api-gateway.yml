@@ -13,18 +13,18 @@ spring:
     gateway:
       routes:
         - id: customer-service
-          uri: http://localhost:8082/
+          uri: lb://CUSTOMER-SERVICE
           predicates:
             - Path=/api/v1/customers/**
         - id: account-service
-          uri: http://localhost:8083/
+          uri: lb://ACCOUNT-SERVICE
           predicates:
-            - Path=/api/v1/**
+            - Path=/api/v1/accounts/**, /api/v1/customers/**
         - id: credit-service
-          uri: http://localhost:8084/
+          uri: lb://CREDIT-SERVICE
           predicates:
             - Path=/api/v1/credits/**
         - id: movement-service
-          uri: http://localhost:8085/
+          uri: lb://MOVEMENT-SERVICE
           predicates:
-            - Path=/api/v1/**
+            - Path=/api/v1/movements/**, /api/v1/products/**
