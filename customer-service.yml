@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: customer-service
+    name: CUSTOMER-SERVICE
   data:
     mongodb:
       uri: mongodb://localhost:27017/customer-service-database
