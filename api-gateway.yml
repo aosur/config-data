@@ -11,6 +11,9 @@ spring:
     name: api-gateway
   cloud:
     gateway:
+      discovery:
+        locator:
+          enabled: true
       routes:
         - id: customer-service
           uri: lb://CUSTOMER-SERVICE
