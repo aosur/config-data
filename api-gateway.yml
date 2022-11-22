@@ -14,20 +14,21 @@ spring:
       discovery:
         locator:
           enabled: true
+          lower-case-service-id: true
       routes:
         - id: customer-service
-          uri: lb://CUSTOMER-SERVICE
+          uri: lb://customer-service/
           predicates:
             - Path=/api/v1/customers/**
         - id: account-service
-          uri: lb://ACCOUNT-SERVICE
+          uri: lb://account-service/
           predicates:
             - Path=/api/v1/accounts/**, /api/v1/customers/**
         - id: credit-service
-          uri: lb://CREDIT-SERVICE
+          uri: lb://credit-service/
           predicates:
             - Path=/api/v1/credits/**
         - id: movement-service
-          uri: lb://MOVEMENT-SERVICE
+          uri: lb://movement-service/
           predicates:
             - Path=/api/v1/movements/**, /api/v1/products/**
