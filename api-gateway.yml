@@ -5,15 +5,15 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
-  instance:
-    hostname: localhost
+  #instance:
+  #  hostname: localhost
 
 spring:
   application:
     name: api-gateway
   cloud:
-    discovery:
-      enabled: true
+    #discovery:
+    #  enabled: true
     gateway:
       discovery:
         locator:
