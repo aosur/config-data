@@ -4,3 +4,10 @@ server:
 spring:
   application:
     name: report-service
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    hostname: localhost
