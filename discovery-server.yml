@@ -5,6 +5,6 @@ eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
-  #instance:
-  #  hostname: localhost
-    serviceUrl.defaultZone: http://eurekaserver:8761/eureka/
+  instance:
+    hostname: localhost
+    #serviceUrl.defaultZone: http://eurekaserver:8761/eureka/
