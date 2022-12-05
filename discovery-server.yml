@@ -7,3 +7,4 @@ eureka:
     fetchRegistry: false
   instance:
     hostname: localhost
+    #serviceUrl.defaultZone: http://eurekaserver:8761/eureka/
